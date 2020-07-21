@@ -1,0 +1,21 @@
+<?php
+/**
+ * @file
+ * Code for the Flock Feature feature.
+ */
+
+include_once('flock_feature.features.inc');
+
+$other_database = array(
+	'database' => 'customer_list',
+	'username' => 'aegir1', // assuming this is necessary
+	'password' => 'power4ducks', // assuming this is necessary
+	'host' => 'howard.essdack.org', // assumes localhost
+	'driver' => 'mysql', // replace with your database driver
+);
+Database::addConnectionInfo('default', 'customers', $other_database);
+
+
+
+function flock_feature_cron() {
+}

@@ -1,0 +1,11 @@
+name = "Migrate flock users"
+package = "Development"
+core = 7.x
+dependencies[] = migrate
+
+stylesheets[all][] = /flock.css
+
+files[] = migrate_flock.module
+files[] = base.inc
+files[] = users.inc
+files[] = districts.inc
